@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanuj Das - DevOps Specialist</title>
+  <meta name="description" content="Tanuj Das - DevOps Specialist with 7.5+ years of experience in CI/CD, Kubernetes, Docker, and cloud infrastructure.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='16' width='100' height='100' fill='%236c63ff'/><text x='50' y='68' font-size='48' font-family='monospace' font-weight='900' text-anchor='middle' fill='white'>TD</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;TD /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-avatar">TD</div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Tanuj Das</h1>
+      <div class="hero-typewriter">
+        <span class="typewriter-prefix">I </span>
+        <span class="typewriter-text" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+      <p class="hero-description">
+        DevOps Specialist with 7.5+ years of experience building resilient CI/CD pipelines,
+        cloud infrastructure, and automation systems that scale.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#experience" class="btn btn-outline">View My Work</a>
+        <a href="Tanuj-Resume-DevOps.pdf" download class="btn btn-outline btn-download">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="7">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Error Reduction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Companies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a DevOps professional passionate about bridging the gap between development and operations.
+            With deep expertise in <strong>Kubernetes</strong>, <strong>Docker</strong>, and
+            <strong>cloud-native technologies</strong>, I design systems that are reliable, secure, and efficient.
+          </p>
+          <p>
+            At Amdocs, I've led automation initiatives that cut production errors by 90% and
+            pioneered Gen-AI knowledge bases from Confluence and Jira. I thrive on solving complex
+            infrastructure challenges and continuously improving deployment workflows.
+          </p>
+          <p>
+            When I'm not automating pipelines, I explore emerging technologies in AI and cloud computing,
+            always looking for the next opportunity to innovate.
+          </p>
+          <div class="about-languages">
+            <h3>Languages</h3>
+            <div class="language-chips">
+              <span class="language-chip">English</span>
+              <span class="language-chip">Hindi</span>
+              <span class="language-chip">Bengali</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Location</h3>
+            <p>Pune, India</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>dastanuj.3012@gmail.com</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/tanujdas" target="_blank">linkedin.com/in/tanujdas</a>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3>Education</h3>
+            <p>B.Tech, Electronics &amp; Telecom</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>DevOps Specialist</h3>
+                <p class="timeline-company">Amdocs, Pune</p>
+              </div>
+              <span class="timeline-date">Apr 2021 - Present</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Collaborated with Product Owners to optimize automation processes, enhancing application scalability and functionality</li>
+              <li>Spearheaded development of two products using OpenShift, Jenkins, Nexus, and Bitbucket</li>
+              <li>Created a Gen-AI knowledge base from Confluence and Jira, automating updates through Jenkins</li>
+              <li>Achieved <strong>90% reduction</strong> in production system errors through streamlined automation</li>
+              <li>Ensured high availability of production, QA, and app-migration servers</li>
+              <li>Implemented best practices to reduce deployment time and enhance security measures</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>OpenShift</span><span>Jenkins</span><span>Kubernetes</span><span>ArgoCD</span><span>Gen-AI</span><span>Nexus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>DevOps Engineer</h3>
+                <p class="timeline-company">ConvergeSol Pvt. Limited, Remote</p>
+              </div>
+              <span class="timeline-date">Feb 2021 - Mar 2021</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Built a security product using Packer and AWS Inspector for robust vulnerability management</li>
+              <li>Implemented security measures that significantly reduced system vulnerabilities</li>
+              <li>Streamlined debugging processes, decreasing production system errors</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>Packer</span><span>AWS Inspector</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>DevOps Engineer</h3>
+                <p class="timeline-company">Jumpstart Filings, Remote</p>
+              </div>
+              <span class="timeline-date">Nov 2020 - Jan 2021</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Implemented containerization with Docker and Kubernetes for faster delivery cycles</li>
+              <li>Created CI/CD pipelines with Jenkins and Docker to automate application builds</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer - DevOps</h3>
+                <p class="timeline-company">Nisum Technologies, Hyderabad</p>
+              </div>
+              <span class="timeline-date">Jul 2018 - Nov 2020</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Researched new technologies and methodologies to propose innovative software solutions</li>
+              <li>Deployed applications on server machines with AWS cloud services</li>
+              <li>Coordinated with QA teams to ensure software met all testing criteria</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>EC2</span><span>IAM</span><span>VPC</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Key Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="project-label">Amdocs</div>
+          <h3>Gen-AI Knowledge Base</h3>
+          <p>Built an intelligent knowledge base by aggregating data from Confluence and Jira using Gen-AI. Automated continuous updates through Jenkins pipelines, enabling teams to query organizational knowledge in natural language.</p>
+          <div class="project-tech">
+            <span>OpenAI</span><span>Jenkins</span><span>Confluence API</span><span>Jira API</span><span>Python</span>
+          </div>
+          <div class="project-impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Reduced knowledge discovery time across teams
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="project-label">ConvergeSol</div>
+          <h3>AWS Security Product</h3>
+          <p>Spearheaded creation of a security-hardened AMI pipeline using Packer and AWS Inspector. Automated vulnerability scanning and compliance checks, producing golden images for production workloads.</p>
+          <div class="project-tech">
+            <span>AWS Inspector</span><span>Packer</span><span>EC2</span><span>IAM</span><span>Shell</span>
+          </div>
+          <div class="project-impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Significant reduction in system vulnerabilities
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <div class="project-label">Amdocs</div>
+          <h3>Production Automation Engine</h3>
+          <p>Designed and implemented end-to-end CI/CD pipelines and automation frameworks for two enterprise products. Streamlined deployment processes across OpenShift clusters, achieving 90% reduction in production errors.</p>
+          <div class="project-tech">
+            <span>OpenShift</span><span>Jenkins</span><span>Bitbucket</span><span>Nexus</span><span>Helm</span>
+          </div>
+          <div class="project-impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            90% reduction in production errors
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="project-label">Amdocs</div>
+          <h3>HA Infrastructure Management</h3>
+          <p>Managed and ensured high availability and responsiveness of production, QA, and app-migration server environments. Directed end-to-end project management for infrastructure operations and migrations.</p>
+          <div class="project-tech">
+            <span>Kubernetes</span><span>ArgoCD</span><span>Terraform</span><span>AWS</span><span>Monitoring</span>
+          </div>
+          <div class="project-impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            99.9% uptime across environments
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Container & Orchestration</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #326ce5"></span> Kubernetes</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #2496ed"></span> Docker</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #ee0000"></span> OpenShift</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #ef7b4d"></span> Argo CD</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #0f1689"></span> Helm</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #ff9900"></span> AWS</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #0078d4"></span> Azure</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #dd344c"></span> AWS IAM</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #8c4fff"></span> AWS VPC</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #ff9900"></span> AWS EC2</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #8c4fff"></span> Load Balancers</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>CI/CD & Automation</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #d33833"></span> Jenkins</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #7b42bc"></span> Terraform</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #f05032"></span> Git</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #fcc624"></span> Linux</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #0052cc"></span> Bitbucket</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #00d4aa"></span> Shell Scripting</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>AI & Methodologies</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #10a37f"></span> OpenAI / Gen-AI</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #6c63ff"></span> Cursor AI</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #009688"></span> Agile / Scrum</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #e91e63"></span> DevSecOps</div>
+            <div class="skill-chip"><span class="skill-dot" style="--dot-color: #ff5722"></span> Troubleshooting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-badge">CKA</div>
+          <h3>Certified Kubernetes Administrator</h3>
+          <p>The Linux Foundation</p>
+          <div class="cert-bar"></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge">HCT</div>
+          <h3>HashiCorp Certified Terraform Associate</h3>
+          <p>HashiCorp</p>
+          <div class="cert-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-year">2018</div>
+          <h3>B.Tech / B.E.</h3>
+          <p class="edu-field">Electronics & Telecommunication</p>
+          <p class="edu-school">Uttar Pradesh Technical University (UPTU)</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2013</div>
+          <h3>12th Standard</h3>
+          <p class="edu-school">CISCE (ISC)</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2011</div>
+          <h3>10th Standard</h3>
+          <p class="edu-school">CISCE (ICSE)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always open to discussing new opportunities, DevOps challenges,
+          or just having a chat about cloud-native technologies.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:dastanuj.3012@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span>dastanuj.3012@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tanujdas" target="_blank" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <span>linkedin.com/in/tanujdas</span>
+          </a>
+        </div>
+        <a href="mailto:dastanuj.3012@gmail.com" class="btn btn-primary btn-lg">Say Hello</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <strong>Tanuj Das</strong></p>
+      <p class="footer-sub">DevOps Specialist &middot; Pune, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
