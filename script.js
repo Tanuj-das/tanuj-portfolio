@@ -69,6 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   drawParticles();
 
+  // ── Dynamic Experience Calculation (career start: July 2018) ──
+  const CAREER_START = new Date(2018, 6, 1);
+  function getExperienceYears() {
+    const now = new Date();
+    const diff = now - CAREER_START;
+    const years = diff / (1000 * 60 * 60 * 24 * 365.25);
+    return Math.floor(years * 2) / 2; // rounds to nearest 0.5
+  }
+  const expYears = getExperienceYears();
+  document.getElementById('heroYears').textContent = expYears;
+  document.getElementById('statYears').dataset.target = Math.floor(expYears);
+
   // ── Typewriter Effect ──
   const phrases = [
     'build CI/CD pipelines.',
