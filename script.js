@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Scroll-triggered fade-in ──
   const faders = document.querySelectorAll(
-    '.timeline-item, .skill-category, .cert-card, .edu-card, .detail-card, .contact-card, .project-card'
+    '.timeline-item, .skill-category, .cert-card, .edu-card, .detail-card, .contact-card, .project-card, .expertise-card'
   );
   faders.forEach(el => el.classList.add('fade-in'));
 
