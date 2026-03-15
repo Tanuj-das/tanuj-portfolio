@@ -653,6 +653,46 @@ strong { color: var(--accent-light); font-weight: 600; }
 }
 .project-impact svg { stroke: var(--accent-secondary); flex-shrink: 0; }
 
+/* ========== Expertise / What I Deliver ========== */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.expertise-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--transition);
+  position: relative;
+}
+.expertise-card:hover {
+  border-color: rgba(var(--particle-color), 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.expertise-icon {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.expertise-icon svg { stroke: var(--accent); }
+
+.expertise-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.expertise-card p {
+  color: var(--text-secondary);
+  font-size: 0.87rem;
+  line-height: 1.7;
+}
+
 /* ========== Skills ========== */
 .skills-grid {
   display: grid;
@@ -898,6 +938,7 @@ strong { color: var(--accent-light); font-weight: 600; }
   .about-details { grid-template-columns: 1fr 1fr; }
 
   .projects-grid { grid-template-columns: 1fr; }
+  .expertise-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: 1fr; max-width: 350px; }
   .edu-grid { grid-template-columns: 1fr; max-width: 350px; }
