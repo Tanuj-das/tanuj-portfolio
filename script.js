@@ -195,6 +195,24 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', countStats);
   countStats();
 
+  // ── Floating badge: show after scrolling past the featured banner ──
+  const floatingBadge = document.getElementById('floatingBadge');
+  const featuredSection = document.getElementById('featured');
+  if (floatingBadge && featuredSection) {
+    floatingBadge.style.opacity = '0';
+    floatingBadge.style.pointerEvents = 'none';
+    window.addEventListener('scroll', () => {
+      const bannerBottom = featuredSection.getBoundingClientRect().bottom;
+      if (bannerBottom < 0) {
+        floatingBadge.style.opacity = '1';
+        floatingBadge.style.pointerEvents = 'auto';
+      } else {
+        floatingBadge.style.opacity = '0';
+        floatingBadge.style.pointerEvents = 'none';
+      }
+    });
+  }
+
   // ── Active nav link highlight ──
   const sections = document.querySelectorAll('.section, .hero');
   const navAnchors = document.querySelectorAll('.nav-links a:not(.nav-cta)');
