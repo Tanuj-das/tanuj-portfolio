@@ -84,12 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Typewriter Effect ──
   const phrases = [
     'build CI/CD pipelines.',
-    'automate everything.',
+    'operationalize AI-SDLC.',
     'architect cloud infrastructure.',
-    'containerize with Kubernetes.',
-    'deploy with ArgoCD.',
-    'love Infrastructure as Code.',
-    'build with Gen-AI.',
+    'run Kubernetes platforms.',
+    'integrate Generative AI.',
+    'automate secure rollouts.',
   ];
   const el = document.getElementById('typewriter');
   let phraseIdx = 0, charIdx = 0, deleting = false;

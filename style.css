@@ -779,9 +779,8 @@ strong { color: var(--accent-light); font-weight: 600; }
 /* ========== Certifications ========== */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -866,7 +865,7 @@ strong { color: var(--accent-light); font-weight: 600; }
 .edu-school { color: var(--text-muted); font-size: 0.85rem; }
 
 /* ========== Contact ========== */
-.contact-content { text-align: center; max-width: 600px; margin: 0 auto; }
+.contact-content { text-align: center; max-width: 860px; margin: 0 auto; }
 
 .contact-intro {
   font-size: 1.15rem;
@@ -877,6 +876,7 @@ strong { color: var(--accent-light); font-weight: 600; }
 
 .contact-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
   margin-bottom: 40px;
@@ -941,6 +941,10 @@ strong { color: var(--accent-light); font-weight: 600; }
 .project-card.fade-in:nth-child(4) { transition-delay: 0.3s; }
 
 /* ========== Responsive ========== */
+@media (max-width: 900px) {
+  .cert-grid { grid-template-columns: 1fr; max-width: 420px; }
+}
+
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
 

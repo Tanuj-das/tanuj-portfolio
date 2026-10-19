@@ -1,6 +1,6 @@
 # tanuj.work — Personal Portfolio
 
-A modern, responsive personal portfolio website for **Tanuj Das**, DevOps Specialist with 7.5+ years of experience in CI/CD, Kubernetes, cloud infrastructure, and automation.
+A modern, responsive personal portfolio website for **Tanuj Das**, DevOps Specialist and AI Platform Engineer with 8+ years of experience in CI/CD, Kubernetes, Generative AI, and cloud infrastructure.
 
 ## Live
 
@@ -17,12 +17,12 @@ A clean, high-contrast light theme toggled via the navbar — preference is save
 ## Features
 
 - **Animated Particle Network** — Floating nodes with connecting lines that create a subtle infrastructure/pipeline aesthetic
-- **Typewriter Effect** — Cycles through roles: "build CI/CD pipelines", "automate everything", "architect cloud infrastructure", etc.
+- **Typewriter Effect** — Cycles through lines such as "build CI/CD pipelines", "operationalize AI-SDLC", and "integrate Generative AI"
 - **Dark / Light Theme** — Toggle with one click; persisted across sessions via `localStorage`
 - **Key Projects Showcase** — Four detailed project cards with descriptions, tech stacks, and impact metrics
 - **Experience Timeline** — Vertical timeline covering all roles from 2018 to present
 - **Skills Grid** — 20+ tools organized by category with brand-accurate color indicators
-- **Certifications** — CKA and HashiCorp Terraform Associate with hover animations
+- **Certifications** — CKA, HashiCorp Terraform Associate, and AWS Certified GenAI Developer
 - **Downloadable Resume** — One-click PDF download directly from the hero section
 - **Scroll Animations** — Fade-in effects triggered by `IntersectionObserver`
 - **Animated Stat Counters** — Numbers count up when scrolled into view
@@ -47,7 +47,7 @@ tanuj-portfolio/
 ├── index.html              # Main page — all sections
 ├── style.css               # Themes, layout, animations
 ├── script.js               # Particles, typewriter, theme toggle
-├── Tanuj-Resume-DevOps.pdf # Downloadable resume
+├── Tanuj_Das_Resume_AI.pdf # Downloadable resume
 └── README.md
 ```
 
@@ -96,11 +96,11 @@ This is a static site — deploy it anywhere:
 | **Hero** | Name, typewriter tagline, stats, CTA buttons, resume download |
 | **About** | Professional summary, languages, contact info cards |
 | **Experience** | Timeline of 4 roles across Amdocs, ConvergeSol, Jumpstart Filings, Nisum |
-| **Projects** | Gen-AI Knowledge Base, AWS Security Product, Production Automation Engine, HA Infrastructure |
-| **Skills** | Container/Orchestration, Cloud, CI/CD, AI & Methodologies |
-| **Certifications** | CKA, HashiCorp Terraform Associate |
+| **Projects** | AI-SDLC Model, Microservices Container Platform, Enterprise CI/CD, Security & High Availability |
+| **Skills** | Generative AI, Containers, CI/CD & Cloud, Security & Automation |
+| **Certifications** | CKA, HashiCorp Terraform Associate, AWS Certified GenAI Developer |
 | **Education** | B.Tech (UPTU), 12th & 10th (CISCE) |
-| **Contact** | Email, LinkedIn, CTA |
+| **Contact** | Email, phone, LinkedIn, CTA |
 
 ## License
 
@@ -108,4 +108,4 @@ This project is for personal use. Feel free to use the structure as a template f
 
 ---
 
-Built by **Tanuj Das** — DevOps Specialist, Pune, India
+Built by **Tanuj Das** — DevOps Specialist & AI Platform Engineer, Pune, India
